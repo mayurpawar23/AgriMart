@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Get Started Now</h1>
+            <h2>wel-Come</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                
+                <label class="terms">
+                    <input type="checkbox" name="terms"> I agree to the <a href="#">terms & policy</a>
+                </label>
+                
+                <button type="submit">Signup</button>
+            </form>
+            <div class="alternative-signup">
+                <p>Or</p>
+                <button class="google">Sign in with Google</button>
+                <button class="apple">Sign in with Apple</button>
+            </div>
+            <p class="signin-link">Have an account? <a href="#">Sign In</a></p>
+        </div>
+        <div class="image-container">
+            <img src="images/background-image.png" alt="Decorative Image">
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

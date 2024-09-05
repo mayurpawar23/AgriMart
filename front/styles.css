@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+}
+
+.form-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.form-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container .terms {
+    display: flex;
+    align-items: center;  /* This aligns items (checkbox and text) vertically in the center */
+    margin-bottom: 20px;
+}
+
+.form-container .terms input[type="checkbox"] {
+    margin-right: 10px;  /* Adds space between the checkbox and the text */
+}
+
+.form-container button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.alternative-signup {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.alternative-signup p {
+    margin-bottom: 10px;
+}
+
+.alternative-signup button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.alternative-signup .google {
+    background-color: #4285F4;
+    color: white;
+}
+
+.alternative-signup .apple {
+    background-color: #000000;
+    color: white;
+}
+
+.signin-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signin-link a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.image-container {
+    flex: 1;
+    background-color: #f0f0f0;
+    background-image: url('random-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container .terms {
+    display: flex;
+    align-items: center;  /* Ensure vertical alignment */
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.form-container .terms input[type="checkbox"] {
+    margin-right: 8px;  /* Space between checkbox and text */
+    width: 18px;        /* Adjust checkbox size if needed */
+    height: 18px;
+}
+
+.form-container .terms label {
+    font-weight: bold; /* Make the text bold as in the example */
+    color: black;      /* Ensure the text color is black */
+}
+
+.form-container .terms a {
+    color: purple;       /* Set link color */
+    text-decoration: underline;  /* Ensure the link is underlined */
+}
+
+.image-container {
+    flex: 1;
+    background-image: url('images/background-image.png');
+    background-size: cover;
+    background-position: center;
+}

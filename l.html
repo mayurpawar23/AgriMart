@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="./main.css" rel="stylesheet">
+    
+    <style>
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .btn-google, .btn-apple {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45%;
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn-google {
+            background-color: #fff;
+            color: #757575;
+        }
+        .btn-apple {
+            background-color: #fff;
+            color: #757575;
+        }
+        .btn-google img, .btn-apple img {
+            height: 15px;
+            margin-right: 8px;
+        }
+        .auth-wrapper {
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .auth-content {
+            position: relative;
+        }
+        .auth-bg {
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            width: 100%;
+            height: 100%;
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
+            border-radius: 8px;
+            z-index: -1;
+        }
+        .auth-form {
+            z-index: 2;
+            position: relative;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-content">
+            <div class="auth-bg"></div>
+            <form class="auth-form">
+                <h5 class="text-center mb-4">Login</h5>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary btn-block ">Login</button>
+                </div>
+                <div class="btn-container">
+                    <div class="btn-google">
+                        <img src="./google.png" alt="Google Icon"> Sign in with Google
+                    </div>
+                    <div class="btn-apple">
+                        <img src="./apple-logo.png" alt="Apple Icon"> Sign in with Apple
+                    </div>
+                </div>
+                <p class="text-center">Don't have an account? <a href="signup.html">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
